@@ -1,0 +1,48 @@
+
+
+body {
+  background-color: red;
+}
+
+.login {
+  overflow: hidden;
+  background-color: white;
+  padding: 40px 30px 30px 30px;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  @include transform(translate(-50%, -50%));
+  @include transition(transform 300ms, box-shadow 300ms);
+  box-shadow: 5px 10px 10px rgba(greenSeaweed, 0.2);
+} 
+
+button {
+  font-family: fontAsap;
+  cursor: pointer;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  width: 80px;
+  border: 0;
+  padding: 10px 0;
+  margin-top: 10px;
+  margin-left: -5px;
+  border-radius: 5px;
+  background-color: redFire;
+  @include transition(background-color 300ms);
+}
+  
+
+@include keyframes (wawes) {
+  from { @include transform(rotate(0)); }
+  to { @include transform(rotate(360deg)); }
+}
+
+.message i {
+  margin: 10px 0;
+  font-size: 2em;
+  color: rgb(108, 194, 227);
+  text-decoration: none;
+}
